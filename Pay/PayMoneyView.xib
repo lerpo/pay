@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayViewController">
+            <connections>
+                <outlet property="actExpectedCashText" destination="xbT-Xn-sX9" id="dn1-ld-xiZ"/>
+                <outlet property="actMatchingBillText" destination="3UH-P9-IVz" id="Vqs-hl-mFT"/>
+                <outlet property="address" destination="i3C-D7-Bd6" id="a9J-sw-t1e"/>
+                <outlet property="dateSelect" destination="QNz-7i-ky7" id="kTm-lD-Afm"/>
+                <outlet property="expectedBillText" destination="EUz-Q0-PL8" id="AlB-le-6wc"/>
+                <outlet property="expectedCashText" destination="0Zd-eV-IRH" id="QQp-tc-BNd"/>
+                <outlet property="matchingBillText" destination="xi4-kD-hkR" id="cku-QE-Qw5"/>
+                <outlet property="matchingCashText" destination="2a3-uh-CMp" id="Z59-HU-Mlw"/>
+                <outlet property="payAcount" destination="6gA-XU-6cs" id="DGX-oX-UHt"/>
+                <outlet property="reciveBank" destination="rPf-jx-Sxy" id="kTx-fa-EDv"/>
+                <outlet property="reciverName" destination="vjN-DI-O4m" id="ooO-qR-vkq"/>
+                <outlet property="selectReciveCount" destination="Mdu-Mp-bIZ" id="9Qd-7M-LRK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6SC-oy-aSD" customClass="Pay">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  付款金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7XB-rL-wvp">
+                    <rect key="frame" x="0.0" y="57" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.95825882545426544" green="0.95825882545426544" blue="0.95825882545426544" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.30588235294117649" green="0.31372549019607843" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="期望现金比例:%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Vm-bD-dQN">
+                    <rect key="frame" x="8" y="103" width="117" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.23921568627450981" green="0.23921568627450981" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="期望票据比例:%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5zt-MA-6yf">
+                    <rect key="frame" x="8" y="137" width="119" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.23921568627450981" green="0.23921568627450981" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="0Zd-eV-IRH">
+                    <rect key="frame" x="127" y="99" width="114" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.61176470588235299" green="0.12941176470588237" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="EUz-Q0-PL8">
+                    <rect key="frame" x="127" y="135" width="114" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.61176470588235299" green="0.12941176470588237" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="匹配现金：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5eI-CG-g1L">
+                    <rect key="frame" x="8" y="181" width="75" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.23921568627450981" green="0.23921568627450981" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实际票据比例:%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="19u-oO-bca">
+                    <rect key="frame" x="162" y="221" width="112" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.76679474964069394" green="0.76679474964069394" blue="0.76679474964069394" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="匹配票据：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xhA-gX-Lau">
+                    <rect key="frame" x="8" y="221" width="75" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.23921568627450981" green="0.23921568627450981" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="2a3-uh-CMp">
+                    <rect key="frame" x="77" y="177" width="78" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.61176470588235299" green="0.12941176470588237" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="3UH-P9-IVz">
+                    <rect key="frame" x="271" y="217" width="41" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.61568627450980395" green="0.13333333333333333" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="xbT-Xn-sX9">
+                    <rect key="frame" x="271" y="177" width="41" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.61176470588235299" green="0.12941176470588237" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="xi4-kD-hkR">
+                    <rect key="frame" x="77" y="217" width="78" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.61176470588235299" green="0.12941176470588237" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="付款账户：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uoj-Wu-PCk">
+                    <rect key="frame" x="8" y="23" width="85" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.31372549019607843" green="0.32549019607843138" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6gA-XU-6cs">
+                    <rect key="frame" x="95" y="19" width="188" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="选择账户&gt;">
+                        <color key="titleColor" red="0.61568627450980395" green="0.13333333333333333" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectAcount:" destination="-1" eventType="touchUpInside" id="pCE-U3-aPZ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="期望付款日：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T7b-ZF-Leb">
+                    <rect key="frame" x="8" y="260" width="102" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QNz-7i-ky7">
+                    <rect key="frame" x="113" y="256" width="170" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="日期选择&gt;">
+                        <color key="titleColor" red="0.61568627450980395" green="0.13333333333333333" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDate:" destination="-1" eventType="touchUpInside" id="NuR-Yg-FdA"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  收款帐户" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g9H-cd-AwA">
+                    <rect key="frame" x="0.0" y="299" width="320" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.9434057719946618" green="0.9434057719946618" blue="0.9434057719946618" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.30663039921465973" green="0.30663039921465973" blue="0.30663039921465973" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mdu-Mp-bIZ">
+                    <rect key="frame" x="95" y="299" width="188" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="选择&gt;">
+                        <color key="titleColor" red="0.61568627450980395" green="0.13333333333333333" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="countsSelect:" destination="-1" eventType="touchUpInside" id="1XX-ga-tmQ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收款户名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="whT-zD-AhI">
+                    <rect key="frame" x="8" y="354" width="85" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收款银行：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QL7-Gh-LM7">
+                    <rect key="frame" x="8" y="390" width="85" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收款地区：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kda-cL-uOZ">
+                    <rect key="frame" x="8" y="425" width="85" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="vjN-DI-O4m">
+                    <rect key="frame" x="95" y="350" width="217" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.61176470588235299" green="0.12941176470588237" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rPf-jx-Sxy">
+                    <rect key="frame" x="95" y="386" width="188" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="选择&gt;">
+                        <color key="titleColor" red="0.61568627450980395" green="0.13333333333333333" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="bankSelect:" destination="-1" eventType="touchUpInside" id="Gdx-Lg-q4B"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i3C-D7-Bd6">
+                    <rect key="frame" x="95" y="421" width="188" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="选择&gt;">
+                        <color key="titleColor" red="0.61568627450980395" green="0.13333333333333333" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="areaSelect:" destination="-1" eventType="touchUpInside" id="Yu1-r6-Xkb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="摘要" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pfY-0w-zR6">
+                    <rect key="frame" x="16" y="464" width="34" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="备注" id="QZX-oa-tGA">
+                    <rect key="frame" x="8" y="454" width="304" height="188"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.94236747382198949" green="0.94236747382198949" blue="0.94236747382198949" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.61176470588235299" green="0.12941176470588237" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实际现金比例:%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PO1-Br-lFX">
+                    <rect key="frame" x="162" y="182" width="112" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.7468814963812751" green="0.7468814963812751" blue="0.7468814963812751" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C8b-BH-bdV">
+                    <rect key="frame" x="250" y="99" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.97302437827225141" green="0.97302437827225141" blue="0.97302437827225141" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                    <state key="normal" title="＋">
+                        <color key="titleColor" red="0.8552338376450056" green="0.8552338376450056" blue="0.8552338376450056" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="creamentButtonClick:" destination="-1" eventType="touchUpInside" id="hgC-me-ECO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ce9-KR-uLI">
+                    <rect key="frame" x="282" y="99" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.97302437827225141" green="0.97302437827225141" blue="0.97302437827225141" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                    <state key="normal" title="－">
+                        <color key="titleColor" red="0.8552338376450056" green="0.8552338376450056" blue="0.8552338376450056" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="creamentButtonClick:" destination="-1" eventType="touchUpInside" id="FOg-Pt-DKX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qu9-Ou-aOH">
+                    <rect key="frame" x="250" y="135" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.97302437827225141" green="0.97302437827225141" blue="0.97302437827225141" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                    <state key="normal" title="＋">
+                        <color key="titleColor" red="0.8552338376450056" green="0.8552338376450056" blue="0.8552338376450056" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="creamentButtonClick:" destination="-1" eventType="touchUpInside" id="MZU-Ml-zig"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GSg-tp-IZu">
+                    <rect key="frame" x="282" y="135" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.97302437827225141" green="0.97302437827225141" blue="0.97302437827225141" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                    <state key="normal" title="－">
+                        <color key="titleColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="creamentButtonClick:" destination="-1" eventType="touchUpInside" id="8Df-5d-WVp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="805" y="239"/>
+        </view>
+    </objects>
+</document>

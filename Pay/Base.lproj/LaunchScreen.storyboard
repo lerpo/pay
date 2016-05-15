@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="100005607865101" translatesAutoresizingMaskIntoConstraints="NO" id="CbN-7a-trl">
+                                <rect key="frame" x="64" y="82" width="193" height="152"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上 汽 财 务" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAu-wy-DI2">
+                                <rect key="frame" x="95" y="257" width="129" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.58431372549019611" green="0.0" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CbN-7a-trl" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="62" id="6Qa-Lm-BNO"/>
+                            <constraint firstItem="CbN-7a-trl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="48" id="G9J-13-s6Z"/>
+                            <constraint firstItem="KAu-wy-DI2" firstAttribute="top" secondItem="CbN-7a-trl" secondAttribute="bottom" constant="23" id="OXw-af-H2M"/>
+                            <constraint firstItem="KAu-wy-DI2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="U9g-m0-z1v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CbN-7a-trl" secondAttribute="trailing" constant="47" id="i8y-IG-QcV"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="KAu-wy-DI2" secondAttribute="bottom" constant="281" id="lTt-ro-gLs"/>
+                            <constraint firstItem="KAu-wy-DI2" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="79" id="s3X-BV-xIw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="100005607865101" width="275" height="275"/>
+    </resources>
+</document>

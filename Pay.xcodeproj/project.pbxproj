@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183CD78B1CE4A39500257ECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD78A1CE4A39500257ECA /* main.m */; };
+		183CD78E1CE4A39500257ECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD78D1CE4A39500257ECA /* AppDelegate.m */; };
+		183CD7911CE4A39500257ECA /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7901CE4A39500257ECA /* PayViewController.m */; };
+		183CD7961CE4A39500257ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7951CE4A39500257ECA /* Assets.xcassets */; };
+		183CD7991CE4A39500257ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7971CE4A39500257ECA /* LaunchScreen.storyboard */; };
+		183CD7A41CE4A39500257ECA /* PayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7A31CE4A39500257ECA /* PayTests.m */; };
+		183CD7AF1CE4A39600257ECA /* PayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7AE1CE4A39600257ECA /* PayUITests.m */; };
+		183CD7BF1CE59E5500257ECA /* Steper.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7BE1CE59E5500257ECA /* Steper.m */; };
+		183CD7C21CE5AFA700257ECA /* PayMoneyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7C11CE5AFA700257ECA /* PayMoneyView.xib */; };
+		183CD7CB1CE5E59600257ECA /* CountListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7CA1CE5E59600257ECA /* CountListViewController.m */; };
+		183CD7CC1CE5E59600257ECA /* CountListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7CA1CE5E59600257ECA /* CountListViewController.m */; };
+		183CD7CD1CE5E59600257ECA /* CountListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7CA1CE5E59600257ECA /* CountListViewController.m */; };
+		183CD7D11CE60D5800257ECA /* BankCountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7D01CE60D5800257ECA /* BankCountModel.m */; };
+		183CD7D21CE60D5800257ECA /* BankCountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7D01CE60D5800257ECA /* BankCountModel.m */; };
+		183CD7D31CE60D5800257ECA /* BankCountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7D01CE60D5800257ECA /* BankCountModel.m */; };
+		183CD7F21CE61DF500257ECA /* arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D61CE61DF500257ECA /* arrow_left.png */; };
+		183CD7F31CE61DF500257ECA /* arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D61CE61DF500257ECA /* arrow_left.png */; };
+		183CD7F41CE61DF500257ECA /* arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D61CE61DF500257ECA /* arrow_left.png */; };
+		183CD7F51CE61DF500257ECA /* arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D71CE61DF500257ECA /* arrow_left@2x.png */; };
+		183CD7F61CE61DF500257ECA /* arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D71CE61DF500257ECA /* arrow_left@2x.png */; };
+		183CD7F71CE61DF500257ECA /* arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D71CE61DF500257ECA /* arrow_left@2x.png */; };
+		183CD7F81CE61DF500257ECA /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D81CE61DF500257ECA /* arrow_right.png */; };
+		183CD7F91CE61DF500257ECA /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D81CE61DF500257ECA /* arrow_right.png */; };
+		183CD7FA1CE61DF500257ECA /* arrow_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D81CE61DF500257ECA /* arrow_right.png */; };
+		183CD7FB1CE61DF500257ECA /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D91CE61DF500257ECA /* arrow_right@2x.png */; };
+		183CD7FC1CE61DF500257ECA /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D91CE61DF500257ECA /* arrow_right@2x.png */; };
+		183CD7FD1CE61DF500257ECA /* arrow_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7D91CE61DF500257ECA /* arrow_right@2x.png */; };
+		183CD7FE1CE61DF500257ECA /* calendar_clear-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DA1CE61DF500257ECA /* calendar_clear-disabled.png */; };
+		183CD7FF1CE61DF500257ECA /* calendar_clear-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DA1CE61DF500257ECA /* calendar_clear-disabled.png */; };
+		183CD8001CE61DF500257ECA /* calendar_clear-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DA1CE61DF500257ECA /* calendar_clear-disabled.png */; };
+		183CD8011CE61DF500257ECA /* calendar_clear-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DB1CE61DF500257ECA /* calendar_clear-disabled@2x.png */; };
+		183CD8021CE61DF500257ECA /* calendar_clear-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DB1CE61DF500257ECA /* calendar_clear-disabled@2x.png */; };
+		183CD8031CE61DF500257ECA /* calendar_clear-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DB1CE61DF500257ECA /* calendar_clear-disabled@2x.png */; };
+		183CD8041CE61DF500257ECA /* calendar_littledot-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DC1CE61DF500257ECA /* calendar_littledot-disabled.png */; };
+		183CD8051CE61DF500257ECA /* calendar_littledot-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DC1CE61DF500257ECA /* calendar_littledot-disabled.png */; };
+		183CD8061CE61DF500257ECA /* calendar_littledot-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DC1CE61DF500257ECA /* calendar_littledot-disabled.png */; };
+		183CD8071CE61DF500257ECA /* calendar_littledot-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DD1CE61DF500257ECA /* calendar_littledot-disabled@2x.png */; };
+		183CD8081CE61DF500257ECA /* calendar_littledot-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DD1CE61DF500257ECA /* calendar_littledot-disabled@2x.png */; };
+		183CD8091CE61DF500257ECA /* calendar_littledot-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DD1CE61DF500257ECA /* calendar_littledot-disabled@2x.png */; };
+		183CD80A1CE61DF500257ECA /* calendar_littledot.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DE1CE61DF500257ECA /* calendar_littledot.png */; };
+		183CD80B1CE61DF500257ECA /* calendar_littledot.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DE1CE61DF500257ECA /* calendar_littledot.png */; };
+		183CD80C1CE61DF500257ECA /* calendar_littledot.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DE1CE61DF500257ECA /* calendar_littledot.png */; };
+		183CD80D1CE61DF500257ECA /* calendar_littledot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DF1CE61DF500257ECA /* calendar_littledot@2x.png */; };
+		183CD80E1CE61DF500257ECA /* calendar_littledot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DF1CE61DF500257ECA /* calendar_littledot@2x.png */; };
+		183CD80F1CE61DF500257ECA /* calendar_littledot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7DF1CE61DF500257ECA /* calendar_littledot@2x.png */; };
+		183CD8101CE61DF500257ECA /* calendar_ok-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E01CE61DF500257ECA /* calendar_ok-disabled.png */; };
+		183CD8111CE61DF500257ECA /* calendar_ok-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E01CE61DF500257ECA /* calendar_ok-disabled.png */; };
+		183CD8121CE61DF500257ECA /* calendar_ok-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E01CE61DF500257ECA /* calendar_ok-disabled.png */; };
+		183CD8131CE61DF500257ECA /* calendar_ok-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E11CE61DF500257ECA /* calendar_ok-disabled@2x.png */; };
+		183CD8141CE61DF500257ECA /* calendar_ok-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E11CE61DF500257ECA /* calendar_ok-disabled@2x.png */; };
+		183CD8151CE61DF500257ECA /* calendar_ok-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E11CE61DF500257ECA /* calendar_ok-disabled@2x.png */; };
+		183CD8161CE61DF500257ECA /* dialog_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E21CE61DF500257ECA /* dialog_cancel.png */; };
+		183CD8171CE61DF500257ECA /* dialog_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E21CE61DF500257ECA /* dialog_cancel.png */; };
+		183CD8181CE61DF500257ECA /* dialog_cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E21CE61DF500257ECA /* dialog_cancel.png */; };
+		183CD8191CE61DF500257ECA /* dialog_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E31CE61DF500257ECA /* dialog_cancel@2x.png */; };
+		183CD81A1CE61DF500257ECA /* dialog_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E31CE61DF500257ECA /* dialog_cancel@2x.png */; };
+		183CD81B1CE61DF500257ECA /* dialog_cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E31CE61DF500257ECA /* dialog_cancel@2x.png */; };
+		183CD81C1CE61DF500257ECA /* dialog_clear-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E41CE61DF500257ECA /* dialog_clear-disabled.png */; };
+		183CD81D1CE61DF500257ECA /* dialog_clear-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E41CE61DF500257ECA /* dialog_clear-disabled.png */; };
+		183CD81E1CE61DF500257ECA /* dialog_clear-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E41CE61DF500257ECA /* dialog_clear-disabled.png */; };
+		183CD81F1CE61DF500257ECA /* dialog_clear-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E51CE61DF500257ECA /* dialog_clear-disabled@2x.png */; };
+		183CD8201CE61DF500257ECA /* dialog_clear-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E51CE61DF500257ECA /* dialog_clear-disabled@2x.png */; };
+		183CD8211CE61DF500257ECA /* dialog_clear-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E51CE61DF500257ECA /* dialog_clear-disabled@2x.png */; };
+		183CD8221CE61DF500257ECA /* dialog_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E61CE61DF500257ECA /* dialog_clear.png */; };
+		183CD8231CE61DF500257ECA /* dialog_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E61CE61DF500257ECA /* dialog_clear.png */; };
+		183CD8241CE61DF500257ECA /* dialog_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E61CE61DF500257ECA /* dialog_clear.png */; };
+		183CD8251CE61DF500257ECA /* dialog_clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E71CE61DF500257ECA /* dialog_clear@2x.png */; };
+		183CD8261CE61DF500257ECA /* dialog_clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E71CE61DF500257ECA /* dialog_clear@2x.png */; };
+		183CD8271CE61DF500257ECA /* dialog_clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E71CE61DF500257ECA /* dialog_clear@2x.png */; };
+		183CD8281CE61DF500257ECA /* dialog_ok-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E81CE61DF500257ECA /* dialog_ok-disabled.png */; };
+		183CD8291CE61DF500257ECA /* dialog_ok-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E81CE61DF500257ECA /* dialog_ok-disabled.png */; };
+		183CD82A1CE61DF500257ECA /* dialog_ok-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E81CE61DF500257ECA /* dialog_ok-disabled.png */; };
+		183CD82B1CE61DF500257ECA /* dialog_ok-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E91CE61DF500257ECA /* dialog_ok-disabled@2x.png */; };
+		183CD82C1CE61DF500257ECA /* dialog_ok-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E91CE61DF500257ECA /* dialog_ok-disabled@2x.png */; };
+		183CD82D1CE61DF500257ECA /* dialog_ok-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7E91CE61DF500257ECA /* dialog_ok-disabled@2x.png */; };
+		183CD82E1CE61DF500257ECA /* dialog_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7EA1CE61DF500257ECA /* dialog_ok.png */; };
+		183CD82F1CE61DF500257ECA /* dialog_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7EA1CE61DF500257ECA /* dialog_ok.png */; };
+		183CD8301CE61DF500257ECA /* dialog_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7EA1CE61DF500257ECA /* dialog_ok.png */; };
+		183CD8311CE61DF500257ECA /* dialog_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7EB1CE61DF500257ECA /* dialog_ok@2x.png */; };
+		183CD8321CE61DF500257ECA /* dialog_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7EB1CE61DF500257ECA /* dialog_ok@2x.png */; };
+		183CD8331CE61DF500257ECA /* dialog_ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7EB1CE61DF500257ECA /* dialog_ok@2x.png */; };
+		183CD8341CE61DF500257ECA /* THDateDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7ED1CE61DF500257ECA /* THDateDay.m */; };
+		183CD8351CE61DF500257ECA /* THDateDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7ED1CE61DF500257ECA /* THDateDay.m */; };
+		183CD8361CE61DF500257ECA /* THDateDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7ED1CE61DF500257ECA /* THDateDay.m */; };
+		183CD8371CE61DF500257ECA /* THDateDay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7EE1CE61DF500257ECA /* THDateDay.xib */; };
+		183CD8381CE61DF500257ECA /* THDateDay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7EE1CE61DF500257ECA /* THDateDay.xib */; };
+		183CD8391CE61DF500257ECA /* THDateDay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7EE1CE61DF500257ECA /* THDateDay.xib */; };
+		183CD83A1CE61DF500257ECA /* THDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7F01CE61DF500257ECA /* THDatePickerViewController.m */; };
+		183CD83B1CE61DF500257ECA /* THDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7F01CE61DF500257ECA /* THDatePickerViewController.m */; };
+		183CD83C1CE61DF500257ECA /* THDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD7F01CE61DF500257ECA /* THDatePickerViewController.m */; };
+		183CD83D1CE61DF500257ECA /* THDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7F11CE61DF500257ECA /* THDatePickerViewController.xib */; };
+		183CD83E1CE61DF500257ECA /* THDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7F11CE61DF500257ECA /* THDatePickerViewController.xib */; };
+		183CD83F1CE61DF500257ECA /* THDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183CD7F11CE61DF500257ECA /* THDatePickerViewController.xib */; };
+		183CD8441CE6B5C500257ECA /* AreaSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD8421CE6B5C500257ECA /* AreaSelectorViewController.m */; };
+		183CD8451CE6B5C500257ECA /* AreaSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD8421CE6B5C500257ECA /* AreaSelectorViewController.m */; };
+		183CD8461CE6B5C500257ECA /* AreaSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD8421CE6B5C500257ECA /* AreaSelectorViewController.m */; };
+		183CD84F1CE6D2E800257ECA /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183CD84E1CE6D2E800257ECA /* address.plist */; };
+		183CD8501CE6D2E800257ECA /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183CD84E1CE6D2E800257ECA /* address.plist */; };
+		183CD8511CE6D2E800257ECA /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 183CD84E1CE6D2E800257ECA /* address.plist */; };
+		183CD8551CE72B0F00257ECA /* MoneyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD8541CE72B0F00257ECA /* MoneyModel.m */; };
+		183CD8561CE72B0F00257ECA /* MoneyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD8541CE72B0F00257ECA /* MoneyModel.m */; };
+		183CD8571CE72B0F00257ECA /* MoneyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CD8541CE72B0F00257ECA /* MoneyModel.m */; };
+		D0A1D5436131A5778299EED9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D791C7A08B8DA2C3554C41 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		183CD7A01CE4A39500257ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 183CD77E1CE4A39300257ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 183CD7851CE4A39400257ECA;
+			remoteInfo = Pay;
+		};
+		183CD7AB1CE4A39600257ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 183CD77E1CE4A39300257ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 183CD7851CE4A39400257ECA;
+			remoteInfo = Pay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		183CD7861CE4A39400257ECA /* Pay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		183CD78A1CE4A39500257ECA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		183CD78C1CE4A39500257ECA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		183CD78D1CE4A39500257ECA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		183CD78F1CE4A39500257ECA /* PayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		183CD7901CE4A39500257ECA /* PayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		183CD7951CE4A39500257ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		183CD7981CE4A39500257ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		183CD79A1CE4A39500257ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183CD79F1CE4A39500257ECA /* PayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		183CD7A31CE4A39500257ECA /* PayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayTests.m; sourceTree = "<group>"; };
+		183CD7A51CE4A39500257ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183CD7AA1CE4A39600257ECA /* PayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		183CD7AE1CE4A39600257ECA /* PayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayUITests.m; sourceTree = "<group>"; };
+		183CD7B01CE4A39600257ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183CD7BD1CE59E5500257ECA /* Steper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Steper.h; sourceTree = "<group>"; };
+		183CD7BE1CE59E5500257ECA /* Steper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Steper.m; sourceTree = "<group>"; };
+		183CD7C11CE5AFA700257ECA /* PayMoneyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayMoneyView.xib; sourceTree = "<group>"; };
+		183CD7C91CE5E59600257ECA /* CountListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountListViewController.h; sourceTree = "<group>"; };
+		183CD7CA1CE5E59600257ECA /* CountListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountListViewController.m; sourceTree = "<group>"; };
+		183CD7CF1CE60D5800257ECA /* BankCountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCountModel.h; sourceTree = "<group>"; };
+		183CD7D01CE60D5800257ECA /* BankCountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCountModel.m; sourceTree = "<group>"; };
+		183CD7D61CE61DF500257ECA /* arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_left.png; sourceTree = "<group>"; };
+		183CD7D71CE61DF500257ECA /* arrow_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_left@2x.png"; sourceTree = "<group>"; };
+		183CD7D81CE61DF500257ECA /* arrow_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right.png; sourceTree = "<group>"; };
+		183CD7D91CE61DF500257ECA /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
+		183CD7DA1CE61DF500257ECA /* calendar_clear-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_clear-disabled.png"; sourceTree = "<group>"; };
+		183CD7DB1CE61DF500257ECA /* calendar_clear-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_clear-disabled@2x.png"; sourceTree = "<group>"; };
+		183CD7DC1CE61DF500257ECA /* calendar_littledot-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_littledot-disabled.png"; sourceTree = "<group>"; };
+		183CD7DD1CE61DF500257ECA /* calendar_littledot-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_littledot-disabled@2x.png"; sourceTree = "<group>"; };
+		183CD7DE1CE61DF500257ECA /* calendar_littledot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_littledot.png; sourceTree = "<group>"; };
+		183CD7DF1CE61DF500257ECA /* calendar_littledot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_littledot@2x.png"; sourceTree = "<group>"; };
+		183CD7E01CE61DF500257ECA /* calendar_ok-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_ok-disabled.png"; sourceTree = "<group>"; };
+		183CD7E11CE61DF500257ECA /* calendar_ok-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_ok-disabled@2x.png"; sourceTree = "<group>"; };
+		183CD7E21CE61DF500257ECA /* dialog_cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialog_cancel.png; sourceTree = "<group>"; };
+		183CD7E31CE61DF500257ECA /* dialog_cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog_cancel@2x.png"; sourceTree = "<group>"; };
+		183CD7E41CE61DF500257ECA /* dialog_clear-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog_clear-disabled.png"; sourceTree = "<group>"; };
+		183CD7E51CE61DF500257ECA /* dialog_clear-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog_clear-disabled@2x.png"; sourceTree = "<group>"; };
+		183CD7E61CE61DF500257ECA /* dialog_clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialog_clear.png; sourceTree = "<group>"; };
+		183CD7E71CE61DF500257ECA /* dialog_clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog_clear@2x.png"; sourceTree = "<group>"; };
+		183CD7E81CE61DF500257ECA /* dialog_ok-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog_ok-disabled.png"; sourceTree = "<group>"; };
+		183CD7E91CE61DF500257ECA /* dialog_ok-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog_ok-disabled@2x.png"; sourceTree = "<group>"; };
+		183CD7EA1CE61DF500257ECA /* dialog_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialog_ok.png; sourceTree = "<group>"; };
+		183CD7EB1CE61DF500257ECA /* dialog_ok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dialog_ok@2x.png"; sourceTree = "<group>"; };
+		183CD7EC1CE61DF500257ECA /* THDateDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDateDay.h; sourceTree = "<group>"; };
+		183CD7ED1CE61DF500257ECA /* THDateDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDateDay.m; sourceTree = "<group>"; };
+		183CD7EE1CE61DF500257ECA /* THDateDay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = THDateDay.xib; sourceTree = "<group>"; };
+		183CD7EF1CE61DF500257ECA /* THDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDatePickerViewController.h; sourceTree = "<group>"; };
+		183CD7F01CE61DF500257ECA /* THDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDatePickerViewController.m; sourceTree = "<group>"; };
+		183CD7F11CE61DF500257ECA /* THDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = THDatePickerViewController.xib; sourceTree = "<group>"; };
+		183CD8411CE6B5C500257ECA /* AreaSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaSelectorViewController.h; sourceTree = "<group>"; };
+		183CD8421CE6B5C500257ECA /* AreaSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaSelectorViewController.m; sourceTree = "<group>"; };
+		183CD84E1CE6D2E800257ECA /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
+		183CD8521CE6DEF300257ECA /* AppUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppUtil.h; sourceTree = "<group>"; };
+		183CD8531CE72B0F00257ECA /* MoneyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyModel.h; sourceTree = "<group>"; };
+		183CD8541CE72B0F00257ECA /* MoneyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyModel.m; sourceTree = "<group>"; };
+		89E6C11E193D14B88E877DB9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D3FA375762541E1E49B0DE26 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D8D791C7A08B8DA2C3554C41 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		183CD7831CE4A39400257ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A1D5436131A5778299EED9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183CD79C1CE4A39500257ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183CD7A71CE4A39500257ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183CD77D1CE4A39300257ECA = {
+			isa = PBXGroup;
+			children = (
+				183CD7881CE4A39500257ECA /* Pay */,
+				183CD7A21CE4A39500257ECA /* PayTests */,
+				183CD7AD1CE4A39600257ECA /* PayUITests */,
+				183CD7871CE4A39400257ECA /* Products */,
+				FF7B2497BA510A1B152652F4 /* Pods */,
+				C35AF9B91EFDFF3277C1ACF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		183CD7871CE4A39400257ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				183CD7861CE4A39400257ECA /* Pay.app */,
+				183CD79F1CE4A39500257ECA /* PayTests.xctest */,
+				183CD7AA1CE4A39600257ECA /* PayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		183CD7881CE4A39500257ECA /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				183CD7CE1CE60D2600257ECA /* model */,
+				183CD7C31CE5E32600257ECA /* selectAcount */,
+				183CD7C01CE5AF7B00257ECA /* mainPay */,
+				183CD7BC1CE59E3500257ECA /* util */,
+				183CD78C1CE4A39500257ECA /* AppDelegate.h */,
+				183CD78D1CE4A39500257ECA /* AppDelegate.m */,
+				183CD7951CE4A39500257ECA /* Assets.xcassets */,
+				183CD84E1CE6D2E800257ECA /* address.plist */,
+				183CD7971CE4A39500257ECA /* LaunchScreen.storyboard */,
+				183CD79A1CE4A39500257ECA /* Info.plist */,
+				183CD7891CE4A39500257ECA /* Supporting Files */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		183CD7891CE4A39500257ECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				183CD78A1CE4A39500257ECA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		183CD7A21CE4A39500257ECA /* PayTests */ = {
+			isa = PBXGroup;
+			children = (
+				183CD7A31CE4A39500257ECA /* PayTests.m */,
+				183CD7A51CE4A39500257ECA /* Info.plist */,
+			);
+			path = PayTests;
+			sourceTree = "<group>";
+		};
+		183CD7AD1CE4A39600257ECA /* PayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				183CD7AE1CE4A39600257ECA /* PayUITests.m */,
+				183CD7B01CE4A39600257ECA /* Info.plist */,
+			);
+			path = PayUITests;
+			sourceTree = "<group>";
+		};
+		183CD7BC1CE59E3500257ECA /* util */ = {
+			isa = PBXGroup;
+			children = (
+				183CD8401CE6B5C500257ECA /* NerveAreaSelectorViewController */,
+				183CD7D41CE61DF500257ECA /* THCalendarDatePicker */,
+				183CD7BD1CE59E5500257ECA /* Steper.h */,
+				183CD7BE1CE59E5500257ECA /* Steper.m */,
+				183CD8521CE6DEF300257ECA /* AppUtil.h */,
+			);
+			name = util;
+			path = view;
+			sourceTree = "<group>";
+		};
+		183CD7C01CE5AF7B00257ECA /* mainPay */ = {
+			isa = PBXGroup;
+			children = (
+				183CD78F1CE4A39500257ECA /* PayViewController.h */,
+				183CD7901CE4A39500257ECA /* PayViewController.m */,
+				183CD7C11CE5AFA700257ECA /* PayMoneyView.xib */,
+			);
+			name = mainPay;
+			sourceTree = "<group>";
+		};
+		183CD7C31CE5E32600257ECA /* selectAcount */ = {
+			isa = PBXGroup;
+			children = (
+				183CD7C91CE5E59600257ECA /* CountListViewController.h */,
+				183CD7CA1CE5E59600257ECA /* CountListViewController.m */,
+			);
+			name = selectAcount;
+			sourceTree = "<group>";
+		};
+		183CD7CE1CE60D2600257ECA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				183CD7CF1CE60D5800257ECA /* BankCountModel.h */,
+				183CD7D01CE60D5800257ECA /* BankCountModel.m */,
+				183CD8531CE72B0F00257ECA /* MoneyModel.h */,
+				183CD8541CE72B0F00257ECA /* MoneyModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		183CD7D41CE61DF500257ECA /* THCalendarDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				183CD7D51CE61DF500257ECA /* Images */,
+				183CD7EC1CE61DF500257ECA /* THDateDay.h */,
+				183CD7ED1CE61DF500257ECA /* THDateDay.m */,
+				183CD7EE1CE61DF500257ECA /* THDateDay.xib */,
+				183CD7EF1CE61DF500257ECA /* THDatePickerViewController.h */,
+				183CD7F01CE61DF500257ECA /* THDatePickerViewController.m */,
+				183CD7F11CE61DF500257ECA /* THDatePickerViewController.xib */,
+			);
+			path = THCalendarDatePicker;
+			sourceTree = "<group>";
+		};
+		183CD7D51CE61DF500257ECA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				183CD7D61CE61DF500257ECA /* arrow_left.png */,
+				183CD7D71CE61DF500257ECA /* arrow_left@2x.png */,
+				183CD7D81CE61DF500257ECA /* arrow_right.png */,
+				183CD7D91CE61DF500257ECA /* arrow_right@2x.png */,
+				183CD7DA1CE61DF500257ECA /* calendar_clear-disabled.png */,
+				183CD7DB1CE61DF500257ECA /* calendar_clear-disabled@2x.png */,
+				183CD7DC1CE61DF500257ECA /* calendar_littledot-disabled.png */,
+				183CD7DD1CE61DF500257ECA /* calendar_littledot-disabled@2x.png */,
+				183CD7DE1CE61DF500257ECA /* calendar_littledot.png */,
+				183CD7DF1CE61DF500257ECA /* calendar_littledot@2x.png */,
+				183CD7E01CE61DF500257ECA /* calendar_ok-disabled.png */,
+				183CD7E11CE61DF500257ECA /* calendar_ok-disabled@2x.png */,
+				183CD7E21CE61DF500257ECA /* dialog_cancel.png */,
+				183CD7E31CE61DF500257ECA /* dialog_cancel@2x.png */,
+				183CD7E41CE61DF500257ECA /* dialog_clear-disabled.png */,
+				183CD7E51CE61DF500257ECA /* dialog_clear-disabled@2x.png */,
+				183CD7E61CE61DF500257ECA /* dialog_clear.png */,
+				183CD7E71CE61DF500257ECA /* dialog_clear@2x.png */,
+				183CD7E81CE61DF500257ECA /* dialog_ok-disabled.png */,
+				183CD7E91CE61DF500257ECA /* dialog_ok-disabled@2x.png */,
+				183CD7EA1CE61DF500257ECA /* dialog_ok.png */,
+				183CD7EB1CE61DF500257ECA /* dialog_ok@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		183CD8401CE6B5C500257ECA /* NerveAreaSelectorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				183CD8411CE6B5C500257ECA /* AreaSelectorViewController.h */,
+				183CD8421CE6B5C500257ECA /* AreaSelectorViewController.m */,
+			);
+			path = NerveAreaSelectorViewController;
+			sourceTree = "<group>";
+		};
+		C35AF9B91EFDFF3277C1ACF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D791C7A08B8DA2C3554C41 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF7B2497BA510A1B152652F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89E6C11E193D14B88E877DB9 /* Pods.debug.xcconfig */,
+				D3FA375762541E1E49B0DE26 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		183CD7851CE4A39400257ECA /* Pay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183CD7B31CE4A39600257ECA /* Build configuration list for PBXNativeTarget "Pay" */;
+			buildPhases = (
+				B990793D0E987EB8BCA3EC4F /* Check Pods Manifest.lock */,
+				183CD7821CE4A39400257ECA /* Sources */,
+				183CD7831CE4A39400257ECA /* Frameworks */,
+				183CD7841CE4A39400257ECA /* Resources */,
+				86500B186CFE405115FDFC0F /* Embed Pods Frameworks */,
+				B2DA9F0941F11E4E6CD463C9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pay;
+			productName = Pay;
+			productReference = 183CD7861CE4A39400257ECA /* Pay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		183CD79E1CE4A39500257ECA /* PayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183CD7B61CE4A39600257ECA /* Build configuration list for PBXNativeTarget "PayTests" */;
+			buildPhases = (
+				183CD79B1CE4A39500257ECA /* Sources */,
+				183CD79C1CE4A39500257ECA /* Frameworks */,
+				183CD79D1CE4A39500257ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				183CD7A11CE4A39500257ECA /* PBXTargetDependency */,
+			);
+			name = PayTests;
+			productName = PayTests;
+			productReference = 183CD79F1CE4A39500257ECA /* PayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		183CD7A91CE4A39500257ECA /* PayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183CD7B91CE4A39600257ECA /* Build configuration list for PBXNativeTarget "PayUITests" */;
+			buildPhases = (
+				183CD7A61CE4A39500257ECA /* Sources */,
+				183CD7A71CE4A39500257ECA /* Frameworks */,
+				183CD7A81CE4A39500257ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				183CD7AC1CE4A39600257ECA /* PBXTargetDependency */,
+			);
+			name = PayUITests;
+			productName = PayUITests;
+			productReference = 183CD7AA1CE4A39600257ECA /* PayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		183CD77E1CE4A39300257ECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					183CD7851CE4A39400257ECA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2KX77VULC9;
+					};
+					183CD79E1CE4A39500257ECA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2KX77VULC9;
+						TestTargetID = 183CD7851CE4A39400257ECA;
+					};
+					183CD7A91CE4A39500257ECA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2KX77VULC9;
+						TestTargetID = 183CD7851CE4A39400257ECA;
+					};
+				};
+			};
+			buildConfigurationList = 183CD7811CE4A39400257ECA /* Build configuration list for PBXProject "Pay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 183CD77D1CE4A39300257ECA;
+			productRefGroup = 183CD7871CE4A39400257ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				183CD7851CE4A39400257ECA /* Pay */,
+				183CD79E1CE4A39500257ECA /* PayTests */,
+				183CD7A91CE4A39500257ECA /* PayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		183CD7841CE4A39400257ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183CD7991CE4A39500257ECA /* LaunchScreen.storyboard in Resources */,
+				183CD7C21CE5AFA700257ECA /* PayMoneyView.xib in Resources */,
+				183CD8251CE61DF500257ECA /* dialog_clear@2x.png in Resources */,
+				183CD8131CE61DF500257ECA /* calendar_ok-disabled@2x.png in Resources */,
+				183CD7FB1CE61DF500257ECA /* arrow_right@2x.png in Resources */,
+				183CD82B1CE61DF500257ECA /* dialog_ok-disabled@2x.png in Resources */,
+				183CD8311CE61DF500257ECA /* dialog_ok@2x.png in Resources */,
+				183CD8101CE61DF500257ECA /* calendar_ok-disabled.png in Resources */,
+				183CD8221CE61DF500257ECA /* dialog_clear.png in Resources */,
+				183CD7FE1CE61DF500257ECA /* calendar_clear-disabled.png in Resources */,
+				183CD82E1CE61DF500257ECA /* dialog_ok.png in Resources */,
+				183CD7F81CE61DF500257ECA /* arrow_right.png in Resources */,
+				183CD8281CE61DF500257ECA /* dialog_ok-disabled.png in Resources */,
+				183CD8011CE61DF500257ECA /* calendar_clear-disabled@2x.png in Resources */,
+				183CD8371CE61DF500257ECA /* THDateDay.xib in Resources */,
+				183CD81F1CE61DF500257ECA /* dialog_clear-disabled@2x.png in Resources */,
+				183CD7F21CE61DF500257ECA /* arrow_left.png in Resources */,
+				183CD8191CE61DF500257ECA /* dialog_cancel@2x.png in Resources */,
+				183CD8161CE61DF500257ECA /* dialog_cancel.png in Resources */,
+				183CD81C1CE61DF500257ECA /* dialog_clear-disabled.png in Resources */,
+				183CD8071CE61DF500257ECA /* calendar_littledot-disabled@2x.png in Resources */,
+				183CD8041CE61DF500257ECA /* calendar_littledot-disabled.png in Resources */,
+				183CD7961CE4A39500257ECA /* Assets.xcassets in Resources */,
+				183CD83D1CE61DF500257ECA /* THDatePickerViewController.xib in Resources */,
+				183CD80D1CE61DF500257ECA /* calendar_littledot@2x.png in Resources */,
+				183CD7F51CE61DF500257ECA /* arrow_left@2x.png in Resources */,
+				183CD80A1CE61DF500257ECA /* calendar_littledot.png in Resources */,
+				183CD84F1CE6D2E800257ECA /* address.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183CD79D1CE4A39500257ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183CD82F1CE61DF500257ECA /* dialog_ok.png in Resources */,
+				183CD8501CE6D2E800257ECA /* address.plist in Resources */,
+				183CD82C1CE61DF500257ECA /* dialog_ok-disabled@2x.png in Resources */,
+				183CD7F31CE61DF500257ECA /* arrow_left.png in Resources */,
+				183CD7FF1CE61DF500257ECA /* calendar_clear-disabled.png in Resources */,
+				183CD8381CE61DF500257ECA /* THDateDay.xib in Resources */,
+				183CD8261CE61DF500257ECA /* dialog_clear@2x.png in Resources */,
+				183CD8291CE61DF500257ECA /* dialog_ok-disabled.png in Resources */,
+				183CD8171CE61DF500257ECA /* dialog_cancel.png in Resources */,
+				183CD8081CE61DF500257ECA /* calendar_littledot-disabled@2x.png in Resources */,
+				183CD8321CE61DF500257ECA /* dialog_ok@2x.png in Resources */,
+				183CD8201CE61DF500257ECA /* dialog_clear-disabled@2x.png in Resources */,
+				183CD8021CE61DF500257ECA /* calendar_clear-disabled@2x.png in Resources */,
+				183CD81D1CE61DF500257ECA /* dialog_clear-disabled.png in Resources */,
+				183CD8051CE61DF500257ECA /* calendar_littledot-disabled.png in Resources */,
+				183CD83E1CE61DF500257ECA /* THDatePickerViewController.xib in Resources */,
+				183CD8231CE61DF500257ECA /* dialog_clear.png in Resources */,
+				183CD80B1CE61DF500257ECA /* calendar_littledot.png in Resources */,
+				183CD8111CE61DF500257ECA /* calendar_ok-disabled.png in Resources */,
+				183CD81A1CE61DF500257ECA /* dialog_cancel@2x.png in Resources */,
+				183CD7F61CE61DF500257ECA /* arrow_left@2x.png in Resources */,
+				183CD8141CE61DF500257ECA /* calendar_ok-disabled@2x.png in Resources */,
+				183CD7F91CE61DF500257ECA /* arrow_right.png in Resources */,
+				183CD80E1CE61DF500257ECA /* calendar_littledot@2x.png in Resources */,
+				183CD7FC1CE61DF500257ECA /* arrow_right@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183CD7A81CE4A39500257ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183CD8301CE61DF500257ECA /* dialog_ok.png in Resources */,
+				183CD8511CE6D2E800257ECA /* address.plist in Resources */,
+				183CD82D1CE61DF500257ECA /* dialog_ok-disabled@2x.png in Resources */,
+				183CD7F41CE61DF500257ECA /* arrow_left.png in Resources */,
+				183CD8001CE61DF500257ECA /* calendar_clear-disabled.png in Resources */,
+				183CD8391CE61DF500257ECA /* THDateDay.xib in Resources */,
+				183CD8271CE61DF500257ECA /* dialog_clear@2x.png in Resources */,
+				183CD82A1CE61DF500257ECA /* dialog_ok-disabled.png in Resources */,
+				183CD8181CE61DF500257ECA /* dialog_cancel.png in Resources */,
+				183CD8091CE61DF500257ECA /* calendar_littledot-disabled@2x.png in Resources */,
+				183CD8331CE61DF500257ECA /* dialog_ok@2x.png in Resources */,
+				183CD8211CE61DF500257ECA /* dialog_clear-disabled@2x.png in Resources */,
+				183CD8031CE61DF500257ECA /* calendar_clear-disabled@2x.png in Resources */,
+				183CD81E1CE61DF500257ECA /* dialog_clear-disabled.png in Resources */,
+				183CD8061CE61DF500257ECA /* calendar_littledot-disabled.png in Resources */,
+				183CD83F1CE61DF500257ECA /* THDatePickerViewController.xib in Resources */,
+				183CD8241CE61DF500257ECA /* dialog_clear.png in Resources */,
+				183CD80C1CE61DF500257ECA /* calendar_littledot.png in Resources */,
+				183CD8121CE61DF500257ECA /* calendar_ok-disabled.png in Resources */,
+				183CD81B1CE61DF500257ECA /* dialog_cancel@2x.png in Resources */,
+				183CD7F71CE61DF500257ECA /* arrow_left@2x.png in Resources */,
+				183CD8151CE61DF500257ECA /* calendar_ok-disabled@2x.png in Resources */,
+				183CD7FA1CE61DF500257ECA /* arrow_right.png in Resources */,
+				183CD80F1CE61DF500257ECA /* calendar_littledot@2x.png in Resources */,
+				183CD7FD1CE61DF500257ECA /* arrow_right@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86500B186CFE405115FDFC0F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2DA9F0941F11E4E6CD463C9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B990793D0E987EB8BCA3EC4F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		183CD7821CE4A39400257ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183CD7911CE4A39500257ECA /* PayViewController.m in Sources */,
+				183CD7CB1CE5E59600257ECA /* CountListViewController.m in Sources */,
+				183CD78E1CE4A39500257ECA /* AppDelegate.m in Sources */,
+				183CD7BF1CE59E5500257ECA /* Steper.m in Sources */,
+				183CD78B1CE4A39500257ECA /* main.m in Sources */,
+				183CD8341CE61DF500257ECA /* THDateDay.m in Sources */,
+				183CD8441CE6B5C500257ECA /* AreaSelectorViewController.m in Sources */,
+				183CD83A1CE61DF500257ECA /* THDatePickerViewController.m in Sources */,
+				183CD8551CE72B0F00257ECA /* MoneyModel.m in Sources */,
+				183CD7D11CE60D5800257ECA /* BankCountModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183CD79B1CE4A39500257ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183CD83B1CE61DF500257ECA /* THDatePickerViewController.m in Sources */,
+				183CD7CC1CE5E59600257ECA /* CountListViewController.m in Sources */,
+				183CD7A41CE4A39500257ECA /* PayTests.m in Sources */,
+				183CD8451CE6B5C500257ECA /* AreaSelectorViewController.m in Sources */,
+				183CD8351CE61DF500257ECA /* THDateDay.m in Sources */,
+				183CD8561CE72B0F00257ECA /* MoneyModel.m in Sources */,
+				183CD7D21CE60D5800257ECA /* BankCountModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		183CD7A61CE4A39500257ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183CD83C1CE61DF500257ECA /* THDatePickerViewController.m in Sources */,
+				183CD7CD1CE5E59600257ECA /* CountListViewController.m in Sources */,
+				183CD7AF1CE4A39600257ECA /* PayUITests.m in Sources */,
+				183CD8461CE6B5C500257ECA /* AreaSelectorViewController.m in Sources */,
+				183CD8361CE61DF500257ECA /* THDateDay.m in Sources */,
+				183CD8571CE72B0F00257ECA /* MoneyModel.m in Sources */,
+				183CD7D31CE60D5800257ECA /* BankCountModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		183CD7A11CE4A39500257ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 183CD7851CE4A39400257ECA /* Pay */;
+			targetProxy = 183CD7A01CE4A39500257ECA /* PBXContainerItemProxy */;
+		};
+		183CD7AC1CE4A39600257ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 183CD7851CE4A39400257ECA /* Pay */;
+			targetProxy = 183CD7AB1CE4A39600257ECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		183CD7971CE4A39500257ECA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183CD7981CE4A39500257ECA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		183CD7B11CE4A39600257ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		183CD7B21CE4A39600257ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		183CD7B41CE4A39600257ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89E6C11E193D14B88E877DB9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Pay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xu.test.Pay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		183CD7B51CE4A39600257ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3FA375762541E1E49B0DE26 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Pay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xu.test.Pay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		183CD7B71CE4A39600257ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xu.test.PayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pay.app/Pay";
+			};
+			name = Debug;
+		};
+		183CD7B81CE4A39600257ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xu.test.PayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pay.app/Pay";
+			};
+			name = Release;
+		};
+		183CD7BA1CE4A39600257ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xu.test.PayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Pay;
+			};
+			name = Debug;
+		};
+		183CD7BB1CE4A39600257ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xu.test.PayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Pay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		183CD7811CE4A39400257ECA /* Build configuration list for PBXProject "Pay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183CD7B11CE4A39600257ECA /* Debug */,
+				183CD7B21CE4A39600257ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183CD7B31CE4A39600257ECA /* Build configuration list for PBXNativeTarget "Pay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183CD7B41CE4A39600257ECA /* Debug */,
+				183CD7B51CE4A39600257ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183CD7B61CE4A39600257ECA /* Build configuration list for PBXNativeTarget "PayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183CD7B71CE4A39600257ECA /* Debug */,
+				183CD7B81CE4A39600257ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183CD7B91CE4A39600257ECA /* Build configuration list for PBXNativeTarget "PayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183CD7BA1CE4A39600257ECA /* Debug */,
+				183CD7BB1CE4A39600257ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 183CD77E1CE4A39300257ECA /* Project object */;
+}
