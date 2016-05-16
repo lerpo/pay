@@ -816,9 +816,9 @@
 				INFOPLIST_FILE = Pay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xu.test.Pay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerei.hongtianappcan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f6570187-87e1-4bad-8e5a-0708606aae53";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -833,9 +833,9 @@
 				INFOPLIST_FILE = Pay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xu.test.Pay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerei.hongtianappcan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f6570187-87e1-4bad-8e5a-0708606aae53";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
