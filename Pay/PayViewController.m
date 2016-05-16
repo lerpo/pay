@@ -82,12 +82,12 @@
 }
 - (IBAction)selectDate:(id)sender {
     if(!self.datePicker)
-        self.datePicker = [THDatePickerViewController datePicker];
+    self.datePicker = [THDatePickerViewController datePicker];
     self.datePicker.date = [NSDate date];
     self.datePicker.delegate = self;
     [self.datePicker setAllowClearDate:NO];
     [self.datePicker setAutoCloseOnSelectDate:YES];
-    [self.datePicker setSelectedBackgroundColor:[UIColor colorWithRed:125/255.0 green:208/255.0 blue:0/255.0 alpha:1.0]];
+    [self.datePicker setSelectedBackgroundColor:[UIColor colorWithRed:167.0/255.0 green:16.0/255.0 blue:2.0/255.0 alpha:1.0]];
     [self.datePicker setCurrentDateColor:[UIColor colorWithRed:242/255.0 green:121/255.0 blue:53/255.0 alpha:1.0]];
     
     [self.datePicker setDateHasItemsCallback:^BOOL(NSDate *date) {
